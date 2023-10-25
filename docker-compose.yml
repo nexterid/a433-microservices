@@ -2,7 +2,7 @@ version: '3.7'  # versi docker compose
 
 services:
   item-app:
-    image: item-app:v1  # nama image dengan tag v1
+    image: nexterid/item-app:v1  # nama image dengan tag v1
     container_name: item-app # nama container aplikasi
     ports:
       - "80:8080"  # mapping port ke port 80

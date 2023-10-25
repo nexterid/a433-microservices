@@ -679,3 +679,90 @@ Attaching to item-db, item-app
 [33mitem-db     |[0m 2023-10-25T04:52:48.497+0000 I NETWORK  [conn6] received client metadata from 172.24.0.2:34468 conn6: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.15.0-83-generic" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.20" }
 [36;1mitem-app    |[0m Connected to database
 Gracefully stopping... (press Ctrl+C again to force)
+v1: Pulling from nexterid/item-app
+Digest: sha256:7a5c572e86c7369a6ed2de86d6dec4b3da0040ba592dff216c8aae004942e631
+Status: Downloaded newer image for nexterid/item-app:v1
+Attaching to item-db, item-app
+[33mitem-db     |[0m 2023-10-25T06:51:25.933+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=0b5ffd76c7bb
+[33mitem-db     |[0m 2023-10-25T06:51:25.934+0000 I CONTROL  [initandlisten] db version v3.6.23
+[33mitem-db     |[0m 2023-10-25T06:51:25.934+0000 I CONTROL  [initandlisten] git version: d352e6a4764659e0d0350ce77279de3c1f243e5c
+[33mitem-db     |[0m 2023-10-25T06:51:25.934+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+[33mitem-db     |[0m 2023-10-25T06:51:25.934+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+[33mitem-db     |[0m 2023-10-25T06:51:25.934+0000 I CONTROL  [initandlisten] modules: none
+[33mitem-db     |[0m 2023-10-25T06:51:25.934+0000 I CONTROL  [initandlisten] build environment:
+[33mitem-db     |[0m 2023-10-25T06:51:25.934+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+[33mitem-db     |[0m 2023-10-25T06:51:25.934+0000 I CONTROL  [initandlisten]     distarch: x86_64
+[33mitem-db     |[0m 2023-10-25T06:51:25.934+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+[33mitem-db     |[0m 2023-10-25T06:51:25.934+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true }, security: { authorization: "enabled" } }
+[33mitem-db     |[0m 2023-10-25T06:51:25.935+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+[33mitem-db     |[0m 2023-10-25T06:51:25.936+0000 I STORAGE  [initandlisten] 
+[33mitem-db     |[0m 2023-10-25T06:51:25.936+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+[33mitem-db     |[0m 2023-10-25T06:51:25.936+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+[33mitem-db     |[0m 2023-10-25T06:51:25.936+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=1420M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+[36mitem-app    |[0m 
+[36mitem-app    |[0m > docker-software-delivery@1.0.0 start /app
+[36mitem-app    |[0m > node ./bin/www
+[36mitem-app    |[0m 
+[36mitem-app    |[0m NODE_ENV: production
+[33mitem-db     |[0m 2023-10-25T06:51:28.864+0000 I STORAGE  [initandlisten] WiredTiger message [1698216688:864234][1:0x7ff0a01f2a40], txn-recover: Main recovery loop: starting at 3/6272
+[36mitem-app    |[0m /app/node_modules/mongodb/lib/mongo_client.js:421
+[36mitem-app    |[0m           throw err
+[36mitem-app    |[0m           ^
+[36mitem-app    |[0m 
+[36mitem-app    |[0m AssertionError [ERR_ASSERTION]: null == Error [MongoError]: failed to connect to server [item-db:27017] on first connect [Error: connect ECONNREFUSED 172.24.0.2:27017
+[36mitem-app    |[0m     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+[36mitem-app    |[0m   name: 'MongoError'
+[36mitem-app    |[0m }]
+[36mitem-app    |[0m     at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+[36mitem-app    |[0m     at Pool.emit (events.js:400:28)
+[36mitem-app    |[0m     at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+[36mitem-app    |[0m     at Object.onceWrapper (events.js:520:26)
+[36mitem-app    |[0m     at Connection.emit (e...
+[36mitem-app    |[0m     at /app/app.js:24:10
+[36mitem-app    |[0m     at connectCallback (/app/node_modules/mongodb/lib/mongo_client.js:527:5)
+[36mitem-app    |[0m     at /app/node_modules/mongodb/lib/mongo_client.js:418:11
+[36mitem-app    |[0m     at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+[36mitem-app    |[0m   generatedMessage: true,
+[36mitem-app    |[0m   code: 'ERR_ASSERTION',
+[36mitem-app    |[0m   actual: null,
+[36mitem-app    |[0m   expected: Error [MongoError]: failed to connect to server [item-db:27017] on first connect [Error: connect ECONNREFUSED 172.24.0.2:27017
+[36mitem-app    |[0m       at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+[36mitem-app    |[0m     name: 'MongoError'
+[36mitem-app    |[0m   }]
+[36mitem-app    |[0m       at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+[36mitem-app    |[0m       at Pool.emit (events.js:400:28)
+[36mitem-app    |[0m       at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+[36mitem-app    |[0m       at Object.onceWrapper (events.js:520:26)
+[36mitem-app    |[0m       at Connection.emit (events.js:400:28)
+[36mitem-app    |[0m       at Socket.<anonymous> (/app/node_modules/mongodb-core/lib/connection/connection.js:189:49)
+[36mitem-app    |[0m       at Object.onceWrapper (events.js:520:26)
+[36mitem-app    |[0m       at Socket.emit (events.js:400:28)
+[36mitem-app    |[0m       at emitErrorNT (internal/streams/destroy.js:106:8)
+[36mitem-app    |[0m       at emitErrorCloseNT (internal/streams/destroy.js:74:3),
+[36mitem-app    |[0m   operator: '=='
+[36mitem-app    |[0m }
+[36mitem-app    |[0m npm ERR! code ELIFECYCLE
+[36mitem-app    |[0m npm ERR! errno 1
+[36mitem-app    |[0m npm ERR! docker-software-delivery@1.0.0 start: `node ./bin/www`
+[36mitem-app    |[0m npm ERR! Exit status 1
+[36mitem-app    |[0m npm ERR! 
+[36mitem-app    |[0m npm ERR! Failed at the docker-software-delivery@1.0.0 start script.
+[36mitem-app    |[0m npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+[36mitem-app    |[0m 
+[36mitem-app    |[0m npm ERR! A complete log of this run can be found in:
+[36mitem-app    |[0m npm ERR!     /root/.npm/_logs/2023-10-25T06_51_29_056Z-debug.log
+[33mitem-db     |[0m 2023-10-25T06:51:29.131+0000 I STORAGE  [initandlisten] WiredTiger message [1698216689:131554][1:0x7ff0a01f2a40], txn-recover: Recovering log 3 through 4
+[33mitem-db     |[0m 2023-10-25T06:51:29.362+0000 I STORAGE  [initandlisten] WiredTiger message [1698216689:362758][1:0x7ff0a01f2a40], txn-recover: Recovering log 4 through 4
+[33mitem-db     |[0m 2023-10-25T06:51:29.578+0000 I STORAGE  [initandlisten] WiredTiger message [1698216689:578671][1:0x7ff0a01f2a40], txn-recover: Set global recovery timestamp: 0
+[33mitem-db     |[0m 2023-10-25T06:51:29.703+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+[33mitem-db     |[0m 2023-10-25T06:51:29.704+0000 I NETWORK  [initandlisten] listening via socket bound to 0.0.0.0
+[33mitem-db     |[0m 2023-10-25T06:51:29.704+0000 I NETWORK  [initandlisten] listening via socket bound to /tmp/mongodb-27017.sock
+[33mitem-db     |[0m 2023-10-25T06:51:29.704+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+[32mitem-app    |[0m 
+[32mitem-app    |[0m > docker-software-delivery@1.0.0 start /app
+[32mitem-app    |[0m > node ./bin/www
+[32mitem-app    |[0m 
+[32mitem-app    |[0m NODE_ENV: production
+[33mitem-db     |[0m 2023-10-25T06:51:30.932+0000 I NETWORK  [listener] connection accepted from 172.24.0.3:42286 #1 (1 connection now open)
+[33mitem-db     |[0m 2023-10-25T06:51:30.941+0000 I NETWORK  [conn1] received client metadata from 172.24.0.3:42286 conn1: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.15.0-83-generic" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.20" }
+[32mitem-app    |[0m Connected to database
