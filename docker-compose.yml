@@ -1,0 +1,33 @@
+version: '3.7'  # versi docker compose
+
+services:
+  item-app:
+    image: item-app:v1  # nama image dengan tag v1
+    container_name: item-app # nama container aplikasi
+    ports:
+      - "80:8080"  # mapping port ke port 80
+    networks:
+      - net-item-app # network item app
+    depends_on:
+      - item-db  # memastikan item-app berjalan setelah item-db di luncurkan
+    links:
+      - item-db
+    restart: always # Restart container jika terhenti
+
+  item-db:
+    image: mongo:3  # Menggunakan image mongo:3 dari Docker Hub
+    container_name: item-db # nama container database
+    networks:
+      - net-item-app # network item app
+    volumes:
+      - app-db:/data/db  # Mengaitkan volume app-db ke /data/db di container
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root  # db username root
+      MONGO_INITDB_ROOT_PASSWORD: admin  # db password admin
+    restart: always
+
+volumes:
+  app-db:  # Membuat volume bernama app-db
+
+networks:
+  net-item-app: # jaringan untuk item-app

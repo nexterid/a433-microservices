@@ -1,0 +1,681 @@
+Continue with the new image? [yN]3: Pulling from library/mongo
+Digest: sha256:146c1fd999a660e697aac40bc6da842b005c7868232eb0b7d8996c8f3545b05d
+Status: Downloaded newer image for mongo:3
+Continue with the new image? [yN]Gracefully stopping... (press Ctrl+C again to force)
+Attaching to item-db, item-app
+[33mitem-db     |[0m about to fork child process, waiting until server is ready for connections.
+[33mitem-db     |[0m forked process: 26
+[33mitem-db     |[0m 2023-10-25T04:42:47.642+0000 I CONTROL  [main] ***** SERVER RESTARTED *****
+[33mitem-db     |[0m 2023-10-25T04:42:47.657+0000 I CONTROL  [initandlisten] MongoDB starting : pid=26 port=27017 dbpath=/data/db 64-bit host=a99a45e650c3
+[33mitem-db     |[0m 2023-10-25T04:42:47.658+0000 I CONTROL  [initandlisten] db version v3.6.23
+[33mitem-db     |[0m 2023-10-25T04:42:47.658+0000 I CONTROL  [initandlisten] git version: d352e6a4764659e0d0350ce77279de3c1f243e5c
+[33mitem-db     |[0m 2023-10-25T04:42:47.658+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+[33mitem-db     |[0m 2023-10-25T04:42:47.658+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+[33mitem-db     |[0m 2023-10-25T04:42:47.658+0000 I CONTROL  [initandlisten] modules: none
+[33mitem-db     |[0m 2023-10-25T04:42:47.658+0000 I CONTROL  [initandlisten] build environment:
+[33mitem-db     |[0m 2023-10-25T04:42:47.658+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+[33mitem-db     |[0m 2023-10-25T04:42:47.658+0000 I CONTROL  [initandlisten]     distarch: x86_64
+[33mitem-db     |[0m 2023-10-25T04:42:47.658+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+[33mitem-db     |[0m 2023-10-25T04:42:47.658+0000 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", port: 27017, ssl: { mode: "disabled" } }, processManagement: { fork: true, pidFilePath: "/tmp/docker-entrypoint-temp-mongod.pid" }, systemLog: { destination: "file", logAppend: true, path: "/proc/1/fd/1" } }
+[33mitem-db     |[0m 2023-10-25T04:42:47.658+0000 I STORAGE  [initandlisten] 
+[33mitem-db     |[0m 2023-10-25T04:42:47.660+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+[33mitem-db     |[0m 2023-10-25T04:42:47.660+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+[33mitem-db     |[0m 2023-10-25T04:42:47.660+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=1420M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+[36mitem-app    |[0m 
+[36mitem-app    |[0m > docker-software-delivery@1.0.0 start /app
+[36mitem-app    |[0m > node ./bin/www
+[36mitem-app    |[0m 
+[33mitem-db     |[0m 2023-10-25T04:42:49.075+0000 I STORAGE  [initandlisten] WiredTiger message [1698208969:75224][26:0x7fad03d5da40], txn-recover: Set global recovery timestamp: 0
+[33mitem-db     |[0m 2023-10-25T04:42:49.134+0000 I CONTROL  [initandlisten] 
+[33mitem-db     |[0m 2023-10-25T04:42:49.134+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+[33mitem-db     |[0m 2023-10-25T04:42:49.134+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+[33mitem-db     |[0m 2023-10-25T04:42:49.134+0000 I CONTROL  [initandlisten] 
+[33mitem-db     |[0m 2023-10-25T04:42:49.135+0000 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: b3ceb0fa-318b-4e63-8e17-b75367fc3e77
+[33mitem-db     |[0m 2023-10-25T04:42:49.148+0000 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.6
+[33mitem-db     |[0m 2023-10-25T04:42:49.148+0000 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: 8edf795b-67fb-4b1a-987a-631c61bcab2a
+[33mitem-db     |[0m 2023-10-25T04:42:49.169+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+[33mitem-db     |[0m 2023-10-25T04:42:49.170+0000 I NETWORK  [initandlisten] listening via socket bound to 127.0.0.1
+[33mitem-db     |[0m 2023-10-25T04:42:49.171+0000 I NETWORK  [initandlisten] listening via socket bound to /tmp/mongodb-27017.sock
+[33mitem-db     |[0m 2023-10-25T04:42:49.171+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+[33mitem-db     |[0m child process started successfully, parent exiting
+[33mitem-db     |[0m 2023-10-25T04:42:49.177+0000 I STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with generated UUID: 645d6345-6cee-48c2-8559-e529e36378f8
+[33mitem-db     |[0m 2023-10-25T04:42:49.191+0000 I INDEX    [LogicalSessionCacheRefresh] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+[33mitem-db     |[0m 2023-10-25T04:42:49.194+0000 I INDEX    [LogicalSessionCacheRefresh] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+[33mitem-db     |[0m 2023-10-25T04:42:49.254+0000 I INDEX    [LogicalSessionCacheRefresh] build index done.  scanned 0 total records. 0 secs
+[33mitem-db     |[0m 2023-10-25T04:42:49.382+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:36652 #1 (1 connection now open)
+[33mitem-db     |[0m 2023-10-25T04:42:49.384+0000 I NETWORK  [conn1] received client metadata from 127.0.0.1:36652 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+[33mitem-db     |[0m 2023-10-25T04:42:49.398+0000 I NETWORK  [conn1] end connection 127.0.0.1:36652 (0 connections now open)
+[33mitem-db     |[0m 2023-10-25T04:42:49.551+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:36658 #2 (1 connection now open)
+[33mitem-db     |[0m 2023-10-25T04:42:49.553+0000 I NETWORK  [conn2] received client metadata from 127.0.0.1:36658 conn2: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+[33mitem-db     |[0m 2023-10-25T04:42:49.590+0000 I STORAGE  [conn2] createCollection: admin.system.users with generated UUID: d21c1ae1-c3eb-418c-9ad3-79be7b7071b8
+[33mitem-db     |[0m Successfully added user: {
+[33mitem-db     |[0m 	"user" : "root",
+[33mitem-db     |[0m 	"roles" : [
+[33mitem-db     |[0m 		{
+[33mitem-db     |[0m 			"role" : "root",
+[33mitem-db     |[0m 			"db" : "admin"
+[33mitem-db     |[0m 		}
+[33mitem-db     |[0m 	]
+[33mitem-db     |[0m }
+[33mitem-db     |[0m 2023-10-25T04:42:49.601+0000 E -        [main] Error saving history file: FileOpenFailed: Unable to open() file /home/mongodb/.dbshell: No such file or directory
+[33mitem-db     |[0m 2023-10-25T04:42:49.607+0000 I NETWORK  [conn2] end connection 127.0.0.1:36658 (0 connections now open)
+[33mitem-db     |[0m 
+[33mitem-db     |[0m /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+[33mitem-db     |[0m 
+[33mitem-db     |[0m 2023-10-25T04:42:49.638+0000 I CONTROL  [main] ***** SERVER RESTARTED *****
+[33mitem-db     |[0m killing process with pid: 26
+[33mitem-db     |[0m 2023-10-25T04:42:49.649+0000 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+[33mitem-db     |[0m 2023-10-25T04:42:49.649+0000 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+[33mitem-db     |[0m 2023-10-25T04:42:49.650+0000 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+[33mitem-db     |[0m 2023-10-25T04:42:49.650+0000 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+[33mitem-db     |[0m 2023-10-25T04:42:49.651+0000 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+[36mitem-app    |[0m NODE_ENV: production
+[33mitem-db     |[0m 2023-10-25T04:42:49.791+0000 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+[33mitem-db     |[0m 2023-10-25T04:42:49.791+0000 I CONTROL  [signalProcessingThread] now exiting
+[33mitem-db     |[0m 2023-10-25T04:42:49.791+0000 I CONTROL  [signalProcessingThread] shutting down with code:0
+[36mitem-app    |[0m /app/node_modules/mongodb/lib/mongo_client.js:421
+[36mitem-app    |[0m           throw err
+[36mitem-app    |[0m           ^
+[36mitem-app    |[0m 
+[36mitem-app    |[0m AssertionError [ERR_ASSERTION]: null == Error [MongoError]: failed to connect to server [item-db:27017] on first connect [Error: connect ECONNREFUSED 172.24.0.2:27017
+[36mitem-app    |[0m     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+[36mitem-app    |[0m   name: 'MongoError'
+[36mitem-app    |[0m }]
+[36mitem-app    |[0m     at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+[36mitem-app    |[0m     at Pool.emit (events.js:400:28)
+[36mitem-app    |[0m     at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+[36mitem-app    |[0m     at Object.onceWrapper (events.js:520:26)
+[36mitem-app    |[0m     at Connection.emit (e...
+[36mitem-app    |[0m     at /app/app.js:24:10
+[36mitem-app    |[0m     at connectCallback (/app/node_modules/mongodb/lib/mongo_client.js:527:5)
+[36mitem-app    |[0m     at /app/node_modules/mongodb/lib/mongo_client.js:418:11
+[36mitem-app    |[0m     at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+[36mitem-app    |[0m   generatedMessage: true,
+[36mitem-app    |[0m   code: 'ERR_ASSERTION',
+[36mitem-app    |[0m   actual: null,
+[36mitem-app    |[0m   expected: Error [MongoError]: failed to connect to server [item-db:27017] on first connect [Error: connect ECONNREFUSED 172.24.0.2:27017
+[36mitem-app    |[0m       at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+[36mitem-app    |[0m     name: 'MongoError'
+[36mitem-app    |[0m   }]
+[36mitem-app    |[0m       at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+[36mitem-app    |[0m       at Pool.emit (events.js:400:28)
+[36mitem-app    |[0m       at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+[36mitem-app    |[0m       at Object.onceWrapper (events.js:520:26)
+[36mitem-app    |[0m       at Connection.emit (events.js:400:28)
+[36mitem-app    |[0m       at Socket.<anonymous> (/app/node_modules/mongodb-core/lib/connection/connection.js:189:49)
+[36mitem-app    |[0m       at Object.onceWrapper (events.js:520:26)
+[36mitem-app    |[0m       at Socket.emit (events.js:400:28)
+[36mitem-app    |[0m       at emitErrorNT (internal/streams/destroy.js:106:8)
+[36mitem-app    |[0m       at emitErrorCloseNT (internal/streams/destroy.js:74:3),
+[36mitem-app    |[0m   operator: '=='
+[36mitem-app    |[0m }
+[36mitem-app    |[0m npm ERR! code ELIFECYCLE
+[36mitem-app    |[0m npm ERR! errno 1
+[36mitem-app    |[0m npm ERR! docker-software-delivery@1.0.0 start: `node ./bin/www`
+[36mitem-app    |[0m npm ERR! Exit status 1
+[36mitem-app    |[0m npm ERR! 
+[36mitem-app    |[0m npm ERR! Failed at the docker-software-delivery@1.0.0 start script.
+[36mitem-app    |[0m npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+[36mitem-app    |[0m 
+[36mitem-app    |[0m npm ERR! A complete log of this run can be found in:
+[36mitem-app    |[0m npm ERR!     /root/.npm/_logs/2023-10-25T04_42_49_828Z-debug.log
+[33mitem-db     |[0m 
+[33mitem-db     |[0m MongoDB init process complete; ready for start up.
+[33mitem-db     |[0m 
+[33mitem-db     |[0m 2023-10-25T04:42:50.699+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=a99a45e650c3
+[33mitem-db     |[0m 2023-10-25T04:42:50.700+0000 I CONTROL  [initandlisten] db version v3.6.23
+[33mitem-db     |[0m 2023-10-25T04:42:50.700+0000 I CONTROL  [initandlisten] git version: d352e6a4764659e0d0350ce77279de3c1f243e5c
+[33mitem-db     |[0m 2023-10-25T04:42:50.701+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+[33mitem-db     |[0m 2023-10-25T04:42:50.701+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+[33mitem-db     |[0m 2023-10-25T04:42:50.702+0000 I CONTROL  [initandlisten] modules: none
+[33mitem-db     |[0m 2023-10-25T04:42:50.702+0000 I CONTROL  [initandlisten] build environment:
+[33mitem-db     |[0m 2023-10-25T04:42:50.702+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+[33mitem-db     |[0m 2023-10-25T04:42:50.703+0000 I CONTROL  [initandlisten]     distarch: x86_64
+[33mitem-db     |[0m 2023-10-25T04:42:50.703+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+[33mitem-db     |[0m 2023-10-25T04:42:50.704+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true }, security: { authorization: "enabled" } }
+[33mitem-db     |[0m 2023-10-25T04:42:50.704+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+[33mitem-db     |[0m 2023-10-25T04:42:50.705+0000 I STORAGE  [initandlisten] 
+[33mitem-db     |[0m 2023-10-25T04:42:50.705+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+[33mitem-db     |[0m 2023-10-25T04:42:50.706+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+[33mitem-db     |[0m 2023-10-25T04:42:50.706+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=1420M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+[32mitem-app    |[0m 
+[32mitem-app    |[0m > docker-software-delivery@1.0.0 start /app
+[32mitem-app    |[0m > node ./bin/www
+[32mitem-app    |[0m 
+[32mitem-app    |[0m NODE_ENV: production
+[32mitem-app    |[0m /app/node_modules/mongodb/lib/mongo_client.js:421
+[32mitem-app    |[0m           throw err
+[32mitem-app    |[0m           ^
+[32mitem-app    |[0m 
+[32mitem-app    |[0m AssertionError [ERR_ASSERTION]: null == Error [MongoError]: failed to connect to server [item-db:27017] on first connect [Error: connect ECONNREFUSED 172.24.0.2:27017
+[32mitem-app    |[0m     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+[32mitem-app    |[0m   name: 'MongoError'
+[32mitem-app    |[0m }]
+[32mitem-app    |[0m     at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+[32mitem-app    |[0m     at Pool.emit (events.js:400:28)
+[32mitem-app    |[0m     at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+[32mitem-app    |[0m     at Object.onceWrapper (events.js:520:26)
+[32mitem-app    |[0m     at Connection.emit (e...
+[32mitem-app    |[0m     at /app/app.js:24:10
+[32mitem-app    |[0m     at connectCallback (/app/node_modules/mongodb/lib/mongo_client.js:527:5)
+[32mitem-app    |[0m     at /app/node_modules/mongodb/lib/mongo_client.js:418:11
+[32mitem-app    |[0m     at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+[32mitem-app    |[0m   generatedMessage: true,
+[32mitem-app    |[0m   code: 'ERR_ASSERTION',
+[32mitem-app    |[0m   actual: null,
+[32mitem-app    |[0m   expected: Error [MongoError]: failed to connect to server [item-db:27017] on first connect [Error: connect ECONNREFUSED 172.24.0.2:27017
+[32mitem-app    |[0m       at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+[32mitem-app    |[0m     name: 'MongoError'
+[32mitem-app    |[0m   }]
+[32mitem-app    |[0m       at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+[32mitem-app    |[0m       at Pool.emit (events.js:400:28)
+[32mitem-app    |[0m       at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+[32mitem-app    |[0m       at Object.onceWrapper (events.js:520:26)
+[32mitem-app    |[0m       at Connection.emit (events.js:400:28)
+[32mitem-app    |[0m       at Socket.<anonymous> (/app/node_modules/mongodb-core/lib/connection/connection.js:189:49)
+[32mitem-app    |[0m       at Object.onceWrapper (events.js:520:26)
+[32mitem-app    |[0m       at Socket.emit (events.js:400:28)
+[32mitem-app    |[0m       at emitErrorNT (internal/streams/destroy.js:106:8)
+[32mitem-app    |[0m       at emitErrorCloseNT (internal/streams/destroy.js:74:3),
+[32mitem-app    |[0m   operator: '=='
+[32mitem-app    |[0m }
+[32mitem-app    |[0m npm ERR! code ELIFECYCLE
+[32mitem-app    |[0m npm ERR! errno 1
+[32mitem-app    |[0m npm ERR! docker-software-delivery@1.0.0 start: `node ./bin/www`
+[32mitem-app    |[0m npm ERR! Exit status 1
+[32mitem-app    |[0m npm ERR! 
+[32mitem-app    |[0m npm ERR! Failed at the docker-software-delivery@1.0.0 start script.
+[32mitem-app    |[0m npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+[32mitem-app    |[0m 
+[32mitem-app    |[0m npm ERR! A complete log of this run can be found in:
+[32mitem-app    |[0m npm ERR!     /root/.npm/_logs/2023-10-25T04_42_51_777Z-debug.log
+[36mitem-app exited with code 1
+[0m[33mitem-db     |[0m 2023-10-25T04:43:01.284+0000 I STORAGE  [initandlisten] WiredTiger message [1698208981:284574][1:0x7eff7c442a40], txn-recover: Main recovery loop: starting at 1/27008
+[33mitem-db     |[0m 2023-10-25T04:43:01.884+0000 I STORAGE  [initandlisten] WiredTiger message [1698208981:884207][1:0x7eff7c442a40], txn-recover: Recovering log 1 through 2
+[33mitem-db     |[0m 2023-10-25T04:43:02.185+0000 I STORAGE  [initandlisten] WiredTiger message [1698208982:185838][1:0x7eff7c442a40], txn-recover: Recovering log 2 through 2
+[35mitem-app    |[0m 
+[35mitem-app    |[0m > docker-software-delivery@1.0.0 start /app
+[35mitem-app    |[0m > node ./bin/www
+[35mitem-app    |[0m 
+[33mitem-db     |[0m 2023-10-25T04:43:02.307+0000 I STORAGE  [initandlisten] WiredTiger message [1698208982:307770][1:0x7eff7c442a40], txn-recover: Set global recovery timestamp: 0
+[33mitem-db     |[0m 2023-10-25T04:43:02.399+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+[33mitem-db     |[0m 2023-10-25T04:43:02.399+0000 I NETWORK  [initandlisten] listening via socket bound to 0.0.0.0
+[33mitem-db     |[0m 2023-10-25T04:43:02.399+0000 I NETWORK  [initandlisten] listening via socket bound to /tmp/mongodb-27017.sock
+[33mitem-db     |[0m 2023-10-25T04:43:02.400+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+[35mitem-app    |[0m NODE_ENV: production
+[33mitem-db     |[0m 2023-10-25T04:43:02.793+0000 I NETWORK  [listener] connection accepted from 172.24.0.3:33860 #1 (1 connection now open)
+[33mitem-db     |[0m 2023-10-25T04:43:02.801+0000 I NETWORK  [conn1] received client metadata from 172.24.0.3:33860 conn1: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.15.0-83-generic" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.20" }
+[35mitem-app    |[0m Connected to database
+Gracefully stopping... (press Ctrl+C again to force)
+Attaching to item-db, item-app
+[33mitem-db     |[0m about to fork child process, waiting until server is ready for connections.
+[33mitem-db     |[0m forked process: 26
+[33mitem-db     |[0m 2023-10-25T04:42:47.642+0000 I CONTROL  [main] ***** SERVER RESTARTED *****
+[33mitem-db     |[0m 2023-10-25T04:42:47.657+0000 I CONTROL  [initandlisten] MongoDB starting : pid=26 port=27017 dbpath=/data/db 64-bit host=a99a45e650c3
+[33mitem-db     |[0m 2023-10-25T04:42:47.658+0000 I CONTROL  [initandlisten] db version v3.6.23
+[33mitem-db     |[0m 2023-10-25T04:42:47.658+0000 I CONTROL  [initandlisten] git version: d352e6a4764659e0d0350ce77279de3c1f243e5c
+[33mitem-db     |[0m 2023-10-25T04:42:47.658+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+[33mitem-db     |[0m 2023-10-25T04:42:47.658+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+[33mitem-db     |[0m 2023-10-25T04:42:47.658+0000 I CONTROL  [initandlisten] modules: none
+[33mitem-db     |[0m 2023-10-25T04:42:47.658+0000 I CONTROL  [initandlisten] build environment:
+[33mitem-db     |[0m 2023-10-25T04:42:47.658+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+[33mitem-db     |[0m 2023-10-25T04:42:47.658+0000 I CONTROL  [initandlisten]     distarch: x86_64
+[33mitem-db     |[0m 2023-10-25T04:42:47.658+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+[33mitem-db     |[0m 2023-10-25T04:42:47.658+0000 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", port: 27017, ssl: { mode: "disabled" } }, processManagement: { fork: true, pidFilePath: "/tmp/docker-entrypoint-temp-mongod.pid" }, systemLog: { destination: "file", logAppend: true, path: "/proc/1/fd/1" } }
+[33mitem-db     |[0m 2023-10-25T04:42:47.658+0000 I STORAGE  [initandlisten] 
+[33mitem-db     |[0m 2023-10-25T04:42:47.660+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+[33mitem-db     |[0m 2023-10-25T04:42:47.660+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+[33mitem-db     |[0m 2023-10-25T04:42:47.660+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=1420M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+[33mitem-db     |[0m 2023-10-25T04:42:49.075+0000 I STORAGE  [initandlisten] WiredTiger message [1698208969:75224][26:0x7fad03d5da40], txn-recover: Set global recovery timestamp: 0
+[33mitem-db     |[0m 2023-10-25T04:42:49.134+0000 I CONTROL  [initandlisten] 
+[33mitem-db     |[0m 2023-10-25T04:42:49.134+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+[33mitem-db     |[0m 2023-10-25T04:42:49.134+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+[33mitem-db     |[0m 2023-10-25T04:42:49.134+0000 I CONTROL  [initandlisten] 
+[33mitem-db     |[0m 2023-10-25T04:42:49.135+0000 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: b3ceb0fa-318b-4e63-8e17-b75367fc3e77
+[33mitem-db     |[0m 2023-10-25T04:42:49.148+0000 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.6
+[33mitem-db     |[0m 2023-10-25T04:42:49.148+0000 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: 8edf795b-67fb-4b1a-987a-631c61bcab2a
+[33mitem-db     |[0m 2023-10-25T04:42:49.169+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+[33mitem-db     |[0m 2023-10-25T04:42:49.170+0000 I NETWORK  [initandlisten] listening via socket bound to 127.0.0.1
+[33mitem-db     |[0m 2023-10-25T04:42:49.171+0000 I NETWORK  [initandlisten] listening via socket bound to /tmp/mongodb-27017.sock
+[33mitem-db     |[0m 2023-10-25T04:42:49.171+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+[33mitem-db     |[0m child process started successfully, parent exiting
+[33mitem-db     |[0m 2023-10-25T04:42:49.177+0000 I STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with generated UUID: 645d6345-6cee-48c2-8559-e529e36378f8
+[33mitem-db     |[0m 2023-10-25T04:42:49.191+0000 I INDEX    [LogicalSessionCacheRefresh] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+[33mitem-db     |[0m 2023-10-25T04:42:49.194+0000 I INDEX    [LogicalSessionCacheRefresh] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+[33mitem-db     |[0m 2023-10-25T04:42:49.254+0000 I INDEX    [LogicalSessionCacheRefresh] build index done.  scanned 0 total records. 0 secs
+[33mitem-db     |[0m 2023-10-25T04:42:49.382+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:36652 #1 (1 connection now open)
+[33mitem-db     |[0m 2023-10-25T04:42:49.384+0000 I NETWORK  [conn1] received client metadata from 127.0.0.1:36652 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+[33mitem-db     |[0m 2023-10-25T04:42:49.398+0000 I NETWORK  [conn1] end connection 127.0.0.1:36652 (0 connections now open)
+[33mitem-db     |[0m 2023-10-25T04:42:49.551+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:36658 #2 (1 connection now open)
+[33mitem-db     |[0m 2023-10-25T04:42:49.553+0000 I NETWORK  [conn2] received client metadata from 127.0.0.1:36658 conn2: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+[33mitem-db     |[0m 2023-10-25T04:42:49.590+0000 I STORAGE  [conn2] createCollection: admin.system.users with generated UUID: d21c1ae1-c3eb-418c-9ad3-79be7b7071b8
+[33mitem-db     |[0m Successfully added user: {
+[33mitem-db     |[0m 	"user" : "root",
+[33mitem-db     |[0m 	"roles" : [
+[33mitem-db     |[0m 		{
+[33mitem-db     |[0m 			"role" : "root",
+[33mitem-db     |[0m 			"db" : "admin"
+[33mitem-db     |[0m 		}
+[33mitem-db     |[0m 	]
+[33mitem-db     |[0m }
+[33mitem-db     |[0m 2023-10-25T04:42:49.601+0000 E -        [main] Error saving history file: FileOpenFailed: Unable to open() file /home/mongodb/.dbshell: No such file or directory
+[33mitem-db     |[0m 2023-10-25T04:42:49.607+0000 I NETWORK  [conn2] end connection 127.0.0.1:36658 (0 connections now open)
+[33mitem-db     |[0m 
+[33mitem-db     |[0m /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+[33mitem-db     |[0m 
+[33mitem-db     |[0m 2023-10-25T04:42:49.638+0000 I CONTROL  [main] ***** SERVER RESTARTED *****
+[33mitem-db     |[0m killing process with pid: 26
+[33mitem-db     |[0m 2023-10-25T04:42:49.649+0000 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+[33mitem-db     |[0m 2023-10-25T04:42:49.649+0000 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+[33mitem-db     |[0m 2023-10-25T04:42:49.650+0000 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+[33mitem-db     |[0m 2023-10-25T04:42:49.650+0000 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+[33mitem-db     |[0m 2023-10-25T04:42:49.651+0000 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+[33mitem-db     |[0m 2023-10-25T04:42:49.791+0000 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+[33mitem-db     |[0m 2023-10-25T04:42:49.791+0000 I CONTROL  [signalProcessingThread] now exiting
+[33mitem-db     |[0m 2023-10-25T04:42:49.791+0000 I CONTROL  [signalProcessingThread] shutting down with code:0
+[33mitem-db     |[0m 
+[33mitem-db     |[0m MongoDB init process complete; ready for start up.
+[33mitem-db     |[0m 
+[33mitem-db     |[0m 2023-10-25T04:42:50.699+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=a99a45e650c3
+[33mitem-db     |[0m 2023-10-25T04:42:50.700+0000 I CONTROL  [initandlisten] db version v3.6.23
+[33mitem-db     |[0m 2023-10-25T04:42:50.700+0000 I CONTROL  [initandlisten] git version: d352e6a4764659e0d0350ce77279de3c1f243e5c
+[33mitem-db     |[0m 2023-10-25T04:42:50.701+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+[36mitem-app    |[0m 
+[36mitem-app    |[0m > docker-software-delivery@1.0.0 start /app
+[36mitem-app    |[0m > node ./bin/www
+[36mitem-app    |[0m 
+[36mitem-app    |[0m NODE_ENV: production
+[36mitem-app    |[0m /app/node_modules/mongodb/lib/mongo_client.js:421
+[36mitem-app    |[0m           throw err
+[36mitem-app    |[0m           ^
+[36mitem-app    |[0m 
+[36mitem-app    |[0m AssertionError [ERR_ASSERTION]: null == Error [MongoError]: failed to connect to server [item-db:27017] on first connect [Error: connect ECONNREFUSED 172.24.0.2:27017
+[36mitem-app    |[0m     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+[36mitem-app    |[0m   name: 'MongoError'
+[36mitem-app    |[0m }]
+[36mitem-app    |[0m     at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+[36mitem-app    |[0m     at Pool.emit (events.js:400:28)
+[36mitem-app    |[0m     at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+[36mitem-app    |[0m     at Object.onceWrapper (events.js:520:26)
+[36mitem-app    |[0m     at Connection.emit (e...
+[36mitem-app    |[0m     at /app/app.js:24:10
+[36mitem-app    |[0m     at connectCallback (/app/node_modules/mongodb/lib/mongo_client.js:527:5)
+[36mitem-app    |[0m     at /app/node_modules/mongodb/lib/mongo_client.js:418:11
+[36mitem-app    |[0m     at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+[36mitem-app    |[0m   generatedMessage: true,
+[36mitem-app    |[0m   code: 'ERR_ASSERTION',
+[36mitem-app    |[0m   actual: null,
+[36mitem-app    |[0m   expected: Error [MongoError]: failed to connect to server [item-db:27017] on first connect [Error: connect ECONNREFUSED 172.24.0.2:27017
+[36mitem-app    |[0m       at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+[36mitem-app    |[0m     name: 'MongoError'
+[36mitem-app    |[0m   }]
+[36mitem-app    |[0m       at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+[36mitem-app    |[0m       at Pool.emit (events.js:400:28)
+[36mitem-app    |[0m       at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+[36mitem-app    |[0m       at Object.onceWrapper (events.js:520:26)
+[36mitem-app    |[0m       at Connection.emit (events.js:400:28)
+[36mitem-app    |[0m       at Socket.<anonymous> (/app/node_modules/mongodb-core/lib/connection/connection.js:189:49)
+[36mitem-app    |[0m       at Object.onceWrapper (events.js:520:26)
+[36mitem-app    |[0m       at Socket.emit (events.js:400:28)
+[36mitem-app    |[0m       at emitErrorNT (internal/streams/destroy.js:106:8)
+[36mitem-app    |[0m       at emitErrorCloseNT (internal/streams/destroy.js:74:3),
+[36mitem-app    |[0m   operator: '=='
+[36mitem-app    |[0m }
+[36mitem-app    |[0m npm ERR! code ELIFECYCLE
+[36mitem-app    |[0m npm ERR! errno 1
+[36mitem-app    |[0m npm ERR! docker-software-delivery@1.0.0 start: `node ./bin/www`
+[36mitem-app    |[0m npm ERR! Exit status 1
+[36mitem-app    |[0m npm ERR! 
+[36mitem-app    |[0m npm ERR! Failed at the docker-software-delivery@1.0.0 start script.
+[36mitem-app    |[0m npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+[36mitem-app    |[0m 
+[36mitem-app    |[0m npm ERR! A complete log of this run can be found in:
+[36mitem-app    |[0m npm ERR!     /root/.npm/_logs/2023-10-25T04_42_49_828Z-debug.log
+[36mitem-app    |[0m 
+[36mitem-app    |[0m > docker-software-delivery@1.0.0 start /app
+[36mitem-app    |[0m > node ./bin/www
+[36mitem-app    |[0m 
+[36mitem-app    |[0m NODE_ENV: production
+[36mitem-app    |[0m /app/node_modules/mongodb/lib/mongo_client.js:421
+[36mitem-app    |[0m           throw err
+[36mitem-app    |[0m           ^
+[36mitem-app    |[0m 
+[36mitem-app    |[0m AssertionError [ERR_ASSERTION]: null == Error [MongoError]: failed to connect to server [item-db:27017] on first connect [Error: connect ECONNREFUSED 172.24.0.2:27017
+[36mitem-app    |[0m     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+[36mitem-app    |[0m   name: 'MongoError'
+[36mitem-app    |[0m }]
+[36mitem-app    |[0m     at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+[36mitem-app    |[0m     at Pool.emit (events.js:400:28)
+[36mitem-app    |[0m     at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+[36mitem-app    |[0m     at Object.onceWrapper (events.js:520:26)
+[36mitem-app    |[0m     at Connection.emit (e...
+[36mitem-app    |[0m     at /app/app.js:24:10
+[36mitem-app    |[0m     at connectCallback (/app/node_modules/mongodb/lib/mongo_client.js:527:5)
+[36mitem-app    |[0m     at /app/node_modules/mongodb/lib/mongo_client.js:418:11
+[36mitem-app    |[0m     at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+[36mitem-app    |[0m   generatedMessage: true,
+[36mitem-app    |[0m   code: 'ERR_ASSERTION',
+[36mitem-app    |[0m   actual: null,
+[36mitem-app    |[0m   expected: Error [MongoError]: failed to connect to server [item-db:27017] on first connect [Error: connect ECONNREFUSED 172.24.0.2:27017
+[36mitem-app    |[0m       at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+[36mitem-app    |[0m     name: 'MongoError'
+[36mitem-app    |[0m   }]
+[36mitem-app    |[0m       at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+[36mitem-app    |[0m       at Pool.emit (events.js:400:28)
+[36mitem-app    |[0m       at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+[36mitem-app    |[0m       at Object.onceWrapper (events.js:520:26)
+[36mitem-app    |[0m       at Connection.emit (events.js:400:28)
+[36mitem-app    |[0m       at Socket.<anonymous> (/app/node_modules/mongodb-core/lib/connection/connection.js:189:49)
+[36mitem-app    |[0m       at Object.onceWrapper (events.js:520:26)
+[36mitem-app    |[0m       at Socket.emit (events.js:400:28)
+[36mitem-app    |[0m       at emitErrorNT (internal/streams/destroy.js:106:8)
+[36mitem-app    |[0m       at emitErrorCloseNT (internal/streams/destroy.js:74:3),
+[36mitem-app    |[0m   operator: '=='
+[36mitem-app    |[0m }
+[36mitem-app    |[0m npm ERR! code ELIFECYCLE
+[36mitem-app    |[0m npm ERR! errno 1
+[36mitem-app    |[0m npm ERR! docker-software-delivery@1.0.0 start: `node ./bin/www`
+[36mitem-app    |[0m npm ERR! Exit status 1
+[36mitem-app    |[0m npm ERR! 
+[36mitem-app    |[0m npm ERR! Failed at the docker-software-delivery@1.0.0 start script.
+[36mitem-app    |[0m npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+[36mitem-app    |[0m 
+[36mitem-app    |[0m npm ERR! A complete log of this run can be found in:
+[36mitem-app    |[0m npm ERR!     /root/.npm/_logs/2023-10-25T04_42_51_777Z-debug.log
+[36mitem-app    |[0m 
+[36mitem-app    |[0m > docker-software-delivery@1.0.0 start /app
+[36mitem-app    |[0m > node ./bin/www
+[36mitem-app    |[0m 
+[36mitem-app    |[0m NODE_ENV: production
+[36mitem-app    |[0m Connected to database
+[36mitem-app    |[0m 
+[36mitem-app    |[0m > docker-software-delivery@1.0.0 start /app
+[36mitem-app    |[0m > node ./bin/www
+[36mitem-app    |[0m 
+[36mitem-app    |[0m NODE_ENV: production
+[36mitem-app    |[0m /app/node_modules/mongodb/lib/mongo_client.js:421
+[36mitem-app    |[0m           throw err
+[36mitem-app    |[0m           ^
+[36mitem-app    |[0m 
+[36mitem-app    |[0m AssertionError [ERR_ASSERTION]: null == Error [MongoError]: failed to connect to server [item-db:27017] on first connect [Error: connect ECONNREFUSED 172.24.0.3:27017
+[36mitem-app    |[0m     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+[36mitem-app    |[0m   name: 'MongoError'
+[36mitem-app    |[0m }]
+[36mitem-app    |[0m     at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+[36mitem-app    |[0m     at Pool.emit (events.js:400:28)
+[36mitem-app    |[0m     at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+[36mitem-app    |[0m     at Object.onceWrapper (events.js:520:26)
+[36mitem-app    |[0m     at Connection.emit (e...
+[36mitem-app    |[0m     at /app/app.js:24:10
+[36mitem-app    |[0m     at connectCallback (/app/node_modules/mongodb/lib/mongo_client.js:527:5)
+[36mitem-app    |[0m     at /app/node_modules/mongodb/lib/mongo_client.js:418:11
+[36mitem-app    |[0m     at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+[36mitem-app    |[0m   generatedMessage: true,
+[36mitem-app    |[0m   code: 'ERR_ASSERTION',
+[36mitem-app    |[0m   actual: null,
+[36mitem-app    |[0m   expected: Error [MongoError]: failed to connect to server [item-db:27017] on first connect [Error: connect ECONNREFUSED 172.24.0.3:27017
+[36mitem-app    |[0m       at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+[36mitem-app    |[0m     name: 'MongoError'
+[36mitem-app    |[0m   }]
+[36mitem-app    |[0m       at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+[36mitem-app    |[0m       at Pool.emit (events.js:400:28)
+[36mitem-app    |[0m       at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+[33mitem-db     |[0m 2023-10-25T04:42:50.701+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+[33mitem-db     |[0m 2023-10-25T04:42:50.702+0000 I CONTROL  [initandlisten] modules: none
+[33mitem-db     |[0m 2023-10-25T04:42:50.702+0000 I CONTROL  [initandlisten] build environment:
+[33mitem-db     |[0m 2023-10-25T04:42:50.702+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+[33mitem-db     |[0m 2023-10-25T04:42:50.703+0000 I CONTROL  [initandlisten]     distarch: x86_64
+[33mitem-db     |[0m 2023-10-25T04:42:50.703+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+[33mitem-db     |[0m 2023-10-25T04:42:50.704+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true }, security: { authorization: "enabled" } }
+[33mitem-db     |[0m 2023-10-25T04:42:50.704+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+[33mitem-db     |[0m 2023-10-25T04:42:50.705+0000 I STORAGE  [initandlisten] 
+[33mitem-db     |[0m 2023-10-25T04:42:50.705+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+[33mitem-db     |[0m 2023-10-25T04:42:50.706+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+[33mitem-db     |[0m 2023-10-25T04:42:50.706+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=1420M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+[33mitem-db     |[0m 2023-10-25T04:43:01.284+0000 I STORAGE  [initandlisten] WiredTiger message [1698208981:284574][1:0x7eff7c442a40], txn-recover: Main recovery loop: starting at 1/27008
+[33mitem-db     |[0m 2023-10-25T04:43:01.884+0000 I STORAGE  [initandlisten] WiredTiger message [1698208981:884207][1:0x7eff7c442a40], txn-recover: Recovering log 1 through 2
+[33mitem-db     |[0m 2023-10-25T04:43:02.185+0000 I STORAGE  [initandlisten] WiredTiger message [1698208982:185838][1:0x7eff7c442a40], txn-recover: Recovering log 2 through 2
+[33mitem-db     |[0m 2023-10-25T04:43:02.307+0000 I STORAGE  [initandlisten] WiredTiger message [1698208982:307770][1:0x7eff7c442a40], txn-recover: Set global recovery timestamp: 0
+[33mitem-db     |[0m 2023-10-25T04:43:02.399+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+[33mitem-db     |[0m 2023-10-25T04:43:02.399+0000 I NETWORK  [initandlisten] listening via socket bound to 0.0.0.0
+[33mitem-db     |[0m 2023-10-25T04:43:02.399+0000 I NETWORK  [initandlisten] listening via socket bound to /tmp/mongodb-27017.sock
+[33mitem-db     |[0m 2023-10-25T04:43:02.400+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+[33mitem-db     |[0m 2023-10-25T04:43:02.793+0000 I NETWORK  [listener] connection accepted from 172.24.0.3:33860 #1 (1 connection now open)
+[33mitem-db     |[0m 2023-10-25T04:43:02.801+0000 I NETWORK  [conn1] received client metadata from 172.24.0.3:33860 conn1: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.15.0-83-generic" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.20" }
+[33mitem-db     |[0m 2023-10-25T04:49:48.602+0000 I NETWORK  [conn1] end connection 172.24.0.3:33860 (0 connections now open)
+[33mitem-db     |[0m 2023-10-25T04:49:48.940+0000 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+[33mitem-db     |[0m 2023-10-25T04:49:48.940+0000 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+[33mitem-db     |[0m 2023-10-25T04:49:48.940+0000 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+[33mitem-db     |[0m 2023-10-25T04:49:48.941+0000 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+[33mitem-db     |[0m 2023-10-25T04:49:48.943+0000 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+[33mitem-db     |[0m 2023-10-25T04:49:49.057+0000 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+[33mitem-db     |[0m 2023-10-25T04:49:49.058+0000 I CONTROL  [signalProcessingThread] now exiting
+[33mitem-db     |[0m 2023-10-25T04:49:49.058+0000 I CONTROL  [signalProcessingThread] shutting down with code:0
+[33mitem-db     |[0m 2023-10-25T04:49:59.174+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=a99a45e650c3
+[33mitem-db     |[0m 2023-10-25T04:49:59.174+0000 I CONTROL  [initandlisten] db version v3.6.23
+[33mitem-db     |[0m 2023-10-25T04:49:59.174+0000 I CONTROL  [initandlisten] git version: d352e6a4764659e0d0350ce77279de3c1f243e5c
+[33mitem-db     |[0m 2023-10-25T04:49:59.174+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+[33mitem-db     |[0m 2023-10-25T04:49:59.174+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+[33mitem-db     |[0m 2023-10-25T04:49:59.174+0000 I CONTROL  [initandlisten] modules: none
+[33mitem-db     |[0m 2023-10-25T04:49:59.174+0000 I CONTROL  [initandlisten] build environment:
+[33mitem-db     |[0m 2023-10-25T04:49:59.174+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+[33mitem-db     |[0m 2023-10-25T04:49:59.174+0000 I CONTROL  [initandlisten]     distarch: x86_64
+[33mitem-db     |[0m 2023-10-25T04:49:59.174+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+[33mitem-db     |[0m 2023-10-25T04:49:59.174+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true }, security: { authorization: "enabled" } }
+[33mitem-db     |[0m 2023-10-25T04:49:59.176+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+[33mitem-db     |[0m 2023-10-25T04:49:59.178+0000 I STORAGE  [initandlisten] 
+[33mitem-db     |[0m 2023-10-25T04:49:59.178+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+[33mitem-db     |[0m 2023-10-25T04:49:59.178+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+[33mitem-db     |[0m 2023-10-25T04:49:59.178+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=1420M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+[33mitem-db     |[0m 2023-10-25T04:50:01.747+0000 I STORAGE  [initandlisten] WiredTiger message [1698209401:747424][1:0x7ffa9404da40], txn-recover: Main recovery loop: starting at 2/6528
+[33mitem-db     |[0m 2023-10-25T04:50:02.004+0000 I STORAGE  [initandlisten] WiredTiger message [1698209402:4966][1:0x7ffa9404da40], txn-recover: Recovering log 2 through 3
+[33mitem-db     |[0m 2023-10-25T04:50:02.141+0000 I STORAGE  [initandlisten] WiredTiger message [1698209402:141428][1:0x7ffa9404da40], txn-recover: Recovering log 3 through 3
+[33mitem-db     |[0m 2023-10-25T04:50:02.260+0000 I STORAGE  [initandlisten] WiredTiger message [1698209402:260291][1:0x7ffa9404da40], txn-recover: Set global recovery timestamp: 0
+[33mitem-db     |[0m 2023-10-25T04:50:02.317+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+[33mitem-db     |[0m 2023-10-25T04:50:02.318+0000 I NETWORK  [initandlisten] listening via socket bound to 0.0.0.0
+[33mitem-db     |[0m 2023-10-25T04:50:02.322+0000 I NETWORK  [initandlisten] listening via socket bound to /tmp/mongodb-27017.sock
+[33mitem-db     |[0m 2023-10-25T04:50:02.322+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+[33mitem-db     |[0m 2023-10-25T04:50:02.928+0000 I NETWORK  [listener] connection accepted from 172.24.0.2:54404 #1 (1 connection now open)
+[33mitem-db     |[0m 2023-10-25T04:50:02.936+0000 I NETWORK  [conn1] received client metadata from 172.24.0.2:54404 conn1: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.15.0-83-generic" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.20" }
+[36mitem-app    |[0m       at Object.onceWrapper (events.js:520:26)
+[36mitem-app    |[0m       at Connection.emit (events.js:400:28)
+[36mitem-app    |[0m       at Socket.<anonymous> (/app/node_modules/mongodb-core/lib/connection/connection.js:189:49)
+[36mitem-app    |[0m       at Object.onceWrapper (events.js:520:26)
+[36mitem-app    |[0m       at Socket.emit (events.js:400:28)
+[36mitem-app    |[0m       at emitErrorNT (internal/streams/destroy.js:106:8)
+[36mitem-app    |[0m       at emitErrorCloseNT (internal/streams/destroy.js:74:3),
+[36mitem-app    |[0m   operator: '=='
+[36mitem-app    |[0m }
+[36mitem-app    |[0m npm ERR! code ELIFECYCLE
+[36mitem-app    |[0m npm ERR! errno 1
+[36mitem-app    |[0m npm ERR! docker-software-delivery@1.0.0 start: `node ./bin/www`
+[36mitem-app    |[0m npm ERR! Exit status 1
+[36mitem-app    |[0m npm ERR! 
+[36mitem-app    |[0m npm ERR! Failed at the docker-software-delivery@1.0.0 start script.
+[36mitem-app    |[0m npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+[36mitem-app    |[0m 
+[36mitem-app    |[0m npm ERR! A complete log of this run can be found in:
+[36mitem-app    |[0m npm ERR!     /root/.npm/_logs/2023-10-25T04_50_00_419Z-debug.log
+[36mitem-app    |[0m 
+[36mitem-app    |[0m > docker-software-delivery@1.0.0 start /app
+[36mitem-app    |[0m > node ./bin/www
+[36mitem-app    |[0m 
+[36mitem-app    |[0m NODE_ENV: production
+[36mitem-app    |[0m Connected to database
+[36mitem-app    |[0m [0mGET / [32m200 [0m265.219 ms - 785[0m
+[36mitem-app    |[0m [0mGET /javascripts/dist/dist.min.js [32m200 [0m25.513 ms - 186999[0m
+[36mitem-app    |[0m [0mGET /stylesheets/style.css [32m200 [0m33.850 ms - 519[0m
+[36mitem-app    |[0m [0mGET /javascripts/dist/dist.min.js [32m200 [0m0.738 ms - 186999[0m
+[36mitem-app    |[0m [0mGET /api [32m200 [0m6.648 ms - -[0m
+[36mitem-app    |[0m /app/node_modules/mongodb/lib/utils.js:123
+[36mitem-app    |[0m     process.nextTick(function() { throw err; });
+[36mitem-app    |[0m                                   ^
+[36mitem-app    |[0m 
+[36mitem-app    |[0m TypeError: Cannot read property 'ops' of undefined
+[36mitem-app    |[0m     at /app/app.js:51:41
+[36mitem-app    |[0m     at /app/node_modules/mongodb/lib/collection.js:440:32
+[36mitem-app    |[0m     at handleCallback (/app/node_modules/mongodb/lib/utils.js:120:56)
+[36mitem-app    |[0m     at /app/node_modules/mongodb/lib/collection.js:745:20
+[36mitem-app    |[0m     at /app/node_modules/mongodb-core/lib/connection/pool.js:469:18
+[36mitem-app    |[0m     at processTicksAndRejections (internal/process/task_queues.js:77:11)
+[36mitem-app    |[0m npm ERR! code ELIFECYCLE
+[36mitem-app    |[0m npm ERR! errno 1
+[36mitem-app    |[0m npm ERR! docker-software-delivery@1.0.0 start: `node ./bin/www`
+[36mitem-app    |[0m npm ERR! Exit status 1
+[36mitem-app    |[0m npm ERR! 
+[36mitem-app    |[0m npm ERR! Failed at the docker-software-delivery@1.0.0 start script.
+[36mitem-app    |[0m npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+[36mitem-app    |[0m 
+[36mitem-app    |[0m npm ERR! A complete log of this run can be found in:
+[36mitem-app    |[0m npm ERR!     /root/.npm/_logs/2023-10-25T04_50_08_928Z-debug.log
+[36mitem-app    |[0m 
+[36mitem-app    |[0m > docker-software-delivery@1.0.0 start /app
+[36mitem-app    |[0m > node ./bin/www
+[36mitem-app    |[0m 
+[36mitem-app    |[0m NODE_ENV: production
+[36mitem-app    |[0m Connected to database
+[33mitem-db     |[0m 2023-10-25T04:50:03.833+0000 I ACCESS   [conn1] Unauthorized: not authorized on accumulator to execute command { find: "documents", filter: {}, $db: "accumulator" }
+[33mitem-db     |[0m 2023-10-25T04:50:08.904+0000 I ACCESS   [conn1] Unauthorized: not authorized on accumulator to execute command { insert: "documents", ordered: true, $db: "accumulator" }
+[33mitem-db     |[0m 2023-10-25T04:50:08.913+0000 I NETWORK  [conn1] end connection 172.24.0.2:54404 (0 connections now open)
+[33mitem-db     |[0m 2023-10-25T04:50:10.374+0000 I NETWORK  [listener] connection accepted from 172.24.0.2:52732 #2 (1 connection now open)
+[33mitem-db     |[0m 2023-10-25T04:50:10.382+0000 I NETWORK  [conn2] received client metadata from 172.24.0.2:52732 conn2: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.15.0-83-generic" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.20" }
+[36mitem-app    |[0m [0mGET / [36m304 [0m250.192 ms - -[0m
+[36mitem-app    |[0m [0mGET /javascripts/dist/dist.min.js [36m304 [0m2.682 ms - -[0m
+[36mitem-app    |[0m [0mGET /javascripts/dist/dist.min.js [36m304 [0m0.887 ms - -[0m
+[36mitem-app    |[0m [0mGET /stylesheets/style.css [32m200 [0m38.059 ms - 519[0m
+[33mitem-db     |[0m 2023-10-25T04:52:15.217+0000 I ACCESS   [conn2] Unauthorized: not authorized on accumulator to execute command { find: "documents", filter: {}, $db: "accumulator" }
+[36mitem-app    |[0m [0mGET /api [32m200 [0m7.641 ms - -[0m
+[33mitem-db     |[0m 2023-10-25T04:52:19.597+0000 I ACCESS   [conn2] Unauthorized: not authorized on accumulator to execute command { insert: "documents", ordered: true, $db: "accumulator" }
+[36mitem-app    |[0m /app/node_modules/mongodb/lib/utils.js:123
+[36mitem-app    |[0m     process.nextTick(function() { throw err; });
+[36mitem-app    |[0m                                   ^
+[36mitem-app    |[0m 
+[36mitem-app    |[0m TypeError: Cannot read property 'ops' of undefined
+[36mitem-app    |[0m     at /app/app.js:51:41
+[36mitem-app    |[0m     at /app/node_modules/mongodb/lib/collection.js:440:32
+[36mitem-app    |[0m     at handleCallback (/app/node_modules/mongodb/lib/utils.js:120:56)
+[36mitem-app    |[0m     at /app/node_modules/mongodb/lib/collection.js:745:20
+[36mitem-app    |[0m     at /app/node_modules/mongodb-core/lib/connection/pool.js:469:18
+[36mitem-app    |[0m     at processTicksAndRejections (internal/process/task_queues.js:77:11)
+[33mitem-db     |[0m 2023-10-25T04:52:19.610+0000 I NETWORK  [conn2] end connection 172.24.0.2:52732 (0 connections now open)
+[36mitem-app    |[0m npm ERR! code ELIFECYCLE
+[36mitem-app    |[0m npm ERR! errno 1
+[36mitem-app    |[0m npm ERR! docker-software-delivery@1.0.0 start: `node ./bin/www`
+[36mitem-app    |[0m npm ERR! Exit status 1
+[36mitem-app    |[0m npm ERR! 
+[36mitem-app    |[0m npm ERR! Failed at the docker-software-delivery@1.0.0 start script.
+[36mitem-app    |[0m npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+[36mitem-app    |[0m 
+[36mitem-app    |[0m npm ERR! A complete log of this run can be found in:
+[36mitem-app    |[0m npm ERR!     /root/.npm/_logs/2023-10-25T04_52_19_629Z-debug.log
+[32mitem-app    |[0m 
+[32mitem-app    |[0m > docker-software-delivery@1.0.0 start /app
+[32mitem-app    |[0m > node ./bin/www
+[32mitem-app    |[0m 
+[32mitem-app    |[0m NODE_ENV: production
+[33mitem-db     |[0m 2023-10-25T04:52:21.209+0000 I NETWORK  [listener] connection accepted from 172.24.0.2:54470 #3 (1 connection now open)
+[33mitem-db     |[0m 2023-10-25T04:52:21.217+0000 I NETWORK  [conn3] received client metadata from 172.24.0.2:54470 conn3: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.15.0-83-generic" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.20" }
+[32mitem-app    |[0m Connected to database
+[33mitem-db     |[0m 2023-10-25T04:52:21.431+0000 I ACCESS   [conn3] Unauthorized: not authorized on accumulator to execute command { insert: "documents", ordered: true, $db: "accumulator" }
+[32mitem-app    |[0m /app/node_modules/mongodb/lib/utils.js:123
+[32mitem-app    |[0m     process.nextTick(function() { throw err; });
+[32mitem-app    |[0m                                   ^
+[32mitem-app    |[0m 
+[32mitem-app    |[0m TypeError: Cannot read property 'ops' of undefined
+[32mitem-app    |[0m     at /app/app.js:51:41
+[32mitem-app    |[0m     at /app/node_modules/mongodb/lib/collection.js:440:32
+[32mitem-app    |[0m     at handleCallback (/app/node_modules/mongodb/lib/utils.js:120:56)
+[32mitem-app    |[0m     at /app/node_modules/mongodb/lib/collection.js:745:20
+[32mitem-app    |[0m     at /app/node_modules/mongodb-core/lib/connection/pool.js:469:18
+[32mitem-app    |[0m     at processTicksAndRejections (internal/process/task_queues.js:77:11)
+[33mitem-db     |[0m 2023-10-25T04:52:21.442+0000 I NETWORK  [conn3] end connection 172.24.0.2:54470 (0 connections now open)
+[32mitem-app    |[0m npm ERR! code ELIFECYCLE
+[32mitem-app    |[0m npm ERR! errno 1
+[32mitem-app    |[0m npm ERR! docker-software-delivery@1.0.0 start: `node ./bin/www`
+[32mitem-app    |[0m npm ERR! Exit status 1
+[32mitem-app    |[0m npm ERR! 
+[32mitem-app    |[0m npm ERR! Failed at the docker-software-delivery@1.0.0 start script.
+[32mitem-app    |[0m npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+[32mitem-app    |[0m 
+[32mitem-app    |[0m npm ERR! A complete log of this run can be found in:
+[32mitem-app    |[0m npm ERR!     /root/.npm/_logs/2023-10-25T04_52_21_462Z-debug.log
+[36mitem-app exited with code 1
+[0m[35mitem-app    |[0m 
+[35mitem-app    |[0m > docker-software-delivery@1.0.0 start /app
+[35mitem-app    |[0m > node ./bin/www
+[35mitem-app    |[0m 
+[35mitem-app    |[0m NODE_ENV: production
+[33mitem-db     |[0m 2023-10-25T04:52:22.954+0000 I NETWORK  [listener] connection accepted from 172.24.0.2:54474 #4 (1 connection now open)
+[33mitem-db     |[0m 2023-10-25T04:52:22.963+0000 I NETWORK  [conn4] received client metadata from 172.24.0.2:54474 conn4: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.15.0-83-generic" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.20" }
+[35mitem-app    |[0m Connected to database
+[35mitem-app    |[0m [0mGET / [36m304 [0m253.142 ms - -[0m
+[35mitem-app    |[0m [0mGET /javascripts/dist/dist.min.js [36m304 [0m1.874 ms - -[0m
+[35mitem-app    |[0m [0mGET /javascripts/dist/dist.min.js [36m304 [0m0.851 ms - -[0m
+[35mitem-app    |[0m [0mGET /stylesheets/style.css [32m200 [0m32.911 ms - 519[0m
+[33mitem-db     |[0m 2023-10-25T04:52:40.597+0000 I ACCESS   [conn4] Unauthorized: not authorized on accumulator to execute command { find: "documents", filter: {}, $db: "accumulator" }
+[35mitem-app    |[0m [0mGET /api [32m200 [0m7.453 ms - -[0m
+[33mitem-db     |[0m 2023-10-25T04:52:45.078+0000 I ACCESS   [conn4] Unauthorized: not authorized on accumulator to execute command { insert: "documents", ordered: true, $db: "accumulator" }
+[35mitem-app    |[0m /app/node_modules/mongodb/lib/utils.js:123
+[35mitem-app    |[0m     process.nextTick(function() { throw err; });
+[35mitem-app    |[0m                                   ^
+[35mitem-app    |[0m 
+[35mitem-app    |[0m TypeError: Cannot read property 'ops' of undefined
+[35mitem-app    |[0m     at /app/app.js:51:41
+[35mitem-app    |[0m     at /app/node_modules/mongodb/lib/collection.js:440:32
+[35mitem-app    |[0m     at handleCallback (/app/node_modules/mongodb/lib/utils.js:120:56)
+[35mitem-app    |[0m     at /app/node_modules/mongodb/lib/collection.js:745:20
+[35mitem-app    |[0m     at /app/node_modules/mongodb-core/lib/connection/pool.js:469:18
+[35mitem-app    |[0m     at processTicksAndRejections (internal/process/task_queues.js:77:11)
+[33mitem-db     |[0m 2023-10-25T04:52:45.089+0000 I NETWORK  [conn4] end connection 172.24.0.2:54474 (0 connections now open)
+[35mitem-app    |[0m npm ERR! code ELIFECYCLE
+[35mitem-app    |[0m npm ERR! errno 1
+[35mitem-app    |[0m npm ERR! docker-software-delivery@1.0.0 start: `node ./bin/www`
+[35mitem-app    |[0m npm ERR! Exit status 1
+[35mitem-app    |[0m npm ERR! 
+[35mitem-app    |[0m npm ERR! Failed at the docker-software-delivery@1.0.0 start script.
+[35mitem-app    |[0m npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+[35mitem-app    |[0m 
+[35mitem-app    |[0m npm ERR! A complete log of this run can be found in:
+[35mitem-app    |[0m npm ERR!     /root/.npm/_logs/2023-10-25T04_52_45_110Z-debug.log
+[32mitem-app exited with code 1
+[0m[34mitem-app    |[0m 
+[34mitem-app    |[0m > docker-software-delivery@1.0.0 start /app
+[34mitem-app    |[0m > node ./bin/www
+[34mitem-app    |[0m 
+[34mitem-app    |[0m NODE_ENV: production
+[33mitem-db     |[0m 2023-10-25T04:52:46.581+0000 I NETWORK  [listener] connection accepted from 172.24.0.2:34458 #5 (1 connection now open)
+[33mitem-db     |[0m 2023-10-25T04:52:46.589+0000 I NETWORK  [conn5] received client metadata from 172.24.0.2:34458 conn5: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.15.0-83-generic" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.20" }
+[34mitem-app    |[0m Connected to database
+[33mitem-db     |[0m 2023-10-25T04:52:46.900+0000 I ACCESS   [conn5] Unauthorized: not authorized on accumulator to execute command { insert: "documents", ordered: true, $db: "accumulator" }
+[34mitem-app    |[0m /app/node_modules/mongodb/lib/utils.js:123
+[34mitem-app    |[0m     process.nextTick(function() { throw err; });
+[34mitem-app    |[0m                                   ^
+[34mitem-app    |[0m 
+[34mitem-app    |[0m TypeError: Cannot read property 'ops' of undefined
+[34mitem-app    |[0m     at /app/app.js:51:41
+[34mitem-app    |[0m     at /app/node_modules/mongodb/lib/collection.js:440:32
+[34mitem-app    |[0m     at handleCallback (/app/node_modules/mongodb/lib/utils.js:120:56)
+[34mitem-app    |[0m     at /app/node_modules/mongodb/lib/collection.js:745:20
+[34mitem-app    |[0m     at /app/node_modules/mongodb-core/lib/connection/pool.js:469:18
+[34mitem-app    |[0m     at processTicksAndRejections (internal/process/task_queues.js:77:11)
+[33mitem-db     |[0m 2023-10-25T04:52:46.910+0000 I NETWORK  [conn5] end connection 172.24.0.2:34458 (0 connections now open)
+[34mitem-app    |[0m npm ERR! code ELIFECYCLE
+[34mitem-app    |[0m npm ERR! errno 1
+[34mitem-app    |[0m npm ERR! docker-software-delivery@1.0.0 start: `node ./bin/www`
+[34mitem-app    |[0m npm ERR! Exit status 1
+[34mitem-app    |[0m npm ERR! 
+[34mitem-app    |[0m npm ERR! Failed at the docker-software-delivery@1.0.0 start script.
+[34mitem-app    |[0m npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+[34mitem-app    |[0m 
+[34mitem-app    |[0m npm ERR! A complete log of this run can be found in:
+[34mitem-app    |[0m npm ERR!     /root/.npm/_logs/2023-10-25T04_52_46_929Z-debug.log
+[35mitem-app exited with code 1
+[0m[36;1mitem-app    |[0m 
+[36;1mitem-app    |[0m > docker-software-delivery@1.0.0 start /app
+[36;1mitem-app    |[0m > node ./bin/www
+[36;1mitem-app    |[0m 
+[36;1mitem-app    |[0m NODE_ENV: production
+[33mitem-db     |[0m 2023-10-25T04:52:48.487+0000 I NETWORK  [listener] connection accepted from 172.24.0.2:34468 #6 (1 connection now open)
+[33mitem-db     |[0m 2023-10-25T04:52:48.497+0000 I NETWORK  [conn6] received client metadata from 172.24.0.2:34468 conn6: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.15.0-83-generic" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.20" }
+[36;1mitem-app    |[0m Connected to database
+Gracefully stopping... (press Ctrl+C again to force)
