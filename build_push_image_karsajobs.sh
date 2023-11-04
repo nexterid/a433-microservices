@@ -7,7 +7,7 @@ docker build -t karsajobs .
 echo $CR_PAT | docker login docker.pkg.github.com -u nexterid --password-stdin
 
 # Mengubah nama image agar sesuai dengan format Docker Hub /github pakage
-docker tag karsajobs-ui docker.pkg.github.com/nexterid/a433-microservices/karsajobs:latest
+docker tag karsajobs docker.pkg.github.com/nexterid/a433-microservices/karsajobs:latest
 
 # mengupload image ke docker hub/github package
 docker push docker.pkg.github.com/nexterid/a433-microservices/karsajobs:latest
