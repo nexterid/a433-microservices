@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Membuat Docker image dari Dockerfile
-docker build -t karsajobs.
+docker build -t karsajobs .
 
 # Melihat daftar image di lokal
 docker images
@@ -13,7 +13,7 @@ docker tag karsajobs nexterid/karsajobs:latest
 docker login
 
 # mengupload image ke docker hub
-docker push nexterid/karsajobs:latest
+docker push docker.pkg.github.com/nexterid/a433-microservices/karsajobs:latest
 
 # informasi ketika upload image ke docker hub selesai
 echo "Image berhasil diunggah ke Docker Hub (atau GitHub Packages)."
